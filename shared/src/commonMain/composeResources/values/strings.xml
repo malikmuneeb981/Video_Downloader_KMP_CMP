@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Video Downloader</string>
+    <string name="choose_app_theme">Choose App Theme</string>
+    <string name="light_theme">Light Theme</string>
+    <string name="dark_theme">Dark Theme</string>
+    <string name="system_default">System Default</string>
+
+    <string name="ad_loading">Loading \n Advertisement</string>
+
+    <!-- Navigation -->
+    <string name="home_tab_folders">Folders</string>
+    <string name="home_tab_videos">Videos</string>
+    <string name="reels">Reels</string>
+
+    <!-- Screen Titles / TopBar -->
+    <string name="status_saver">Status Saver</string>
+    <string name="status_saver_tab_saved">Saved</string>
+    <string name="music_player">Music Player</string>
+    <string name="more_tools">More Tools</string>
+    <string name="fav_reels">Fav Reels</string>
+
+    <!-- Permission needed strings (used in PermissionBtmSheet from code) -->
+
+    <!-- Splash Screen -->
+
+    <!-- Onboarding -->
+    <string name="get_started">Get Started</string>
+    <string name="what_do_you_want">What Do you want to use first?</string>
+
+    <!-- Feature Titles (SelectFeatureScreen) -->
+    <string name="feature_downloader">Downloader</string>
+    <string name="feature_video_player">Video Player</string>
+    <string name="feature_status_saver">Status Saver</string>
+    <string name="feature_music_player">Music Player</string>
+
+    <!-- More Screen -->
+    <string name="download_without_leaving">Download Without Leaving Social Media</string>
+    <string name="enabled">Enabled</string>
+    <string name="disabled">Disabled</string>
+    <string name="language">Languages</string>
+    <string name="english">English</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <!-- HomeScreen -->
+    <string name="no_files_need_permission">No Files Need Permission</string>
+    <string name="allow_access">Allow Access</string>
+    <string name="favorites">Favorites</string>
+
+    <!-- TopBar -->
+    <string name="done">Done</string>
+
+    <!-- Reels / FavReels -->
+    <string name="no_favourite_reels">No Favourite Reels Found</string>
+    <string name="reel_bookmarked">Reel Bookmarked</string>
+    <string name="undo">Undo</string>
+    <string name="check_out_reel">Check out this reel</string>
+
+    <!-- Snackbar Messages -->
+    <string name="please_install_whatsapp">Please Install WhatsApp First</string>
+    <string name="please_enter_valid_url">Please Enter a Valid Url</string>
+
+    <!-- Status Saver -->
+    <string name="we_need_permission">We Need Permission To Get Statuses</string>
+    <string name="grant_access">Grant Access</string>
+    <string name="status_downloaded">Status Downloaded</string>
+    <string name="file_deleted">File Deleted</string>
+
+    <!-- Exit Dialog -->
+    <string name="exit_app">Exit App?</string>
+    <string name="exit_app_confirm">Do you really want to exit the App?</string>
+    <string name="exit">Exit</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Permission Sheet -->
+    <string name="grant">Grant</string>
+
+    <!-- Downloadables Bottom Sheet -->
+    <string name="ready_for_download">Ready for download</string>
+    <string name="select_quality">Select Quality</string>
+    <string name="video">Video</string>
+    <string name="photo">Photo</string>
+    <string name="watch_online">Watch Online</string>
+    <string name="download_video">Download Video</string>
+
+    <!-- Premium Screen -->
+    <string name="pricing">Pricing</string>
+    <string name="get_unlimited_access">Get Unlimited\nAccess to All Features</string>
+    <string name="whats_included">What\'s included</string>
+    <string name="get_full_access">Get Full Access</string>
+
+    <!-- Option Menu / Composables -->
+    <string name="play">Play</string>
+    <string name="share">Share</string>
+    <string name="delete">Delete</string>
+    <string name="downloading_video">Downloading Video</string>
+    <string name="download">Download</string>
+    <string name="favourite">Favourite</string>
+    <string name="no_downloads">No Downloads</string>
+
+    <!-- Downloader Screen -->
+    <string name="search_placeholder">Search Google or enter url</string>
+    <string name="ad_is_loading">Ad is loading...</string>
+
+    <string name="apply">Apply</string>\n    <string name="tell_us_how_we_can_improve">Tell Us How We Can Improve!</string>\n    <string name="description">Description</string>\n    <string name="write_more_if_you_like">Write more if you\'d like...</string>\n    <string name="submit">Submit</string>\n    <string name="go_premium">Go Premium</string>\n    <string name="unlock_all_features">Unlock All Features</string>\n    <string name="upgrade_to_premium_and_enjoy">Upgrade to Premium and enjoy unlimited downloads with no limits.</string>\n    <string name="term_of_use">Term of Use</string>\n    <string name="restore">Restore</string>\n    <string name="premium_plan">Premium Plan</string>\n    <string name="unlock_unlimited_dowloads">Unlock Unlimited Dowloads, ad-free experience, Unlimited Reels and much more</string>\n    <string name="buy_now">Buy Now</string>\n    <string name="favorite_reels">Favorite Reels</string>\n    <string name="share_with_friends">Share With Friends </string>\n    <string name="hd_video">HD Video</string>\n    <string name="trending">Trending</string>\n    <string name="social_media">SOCIAL MEDIA</string>\n    <string name="downloader_upper">DOWNLOADER</string>\n    <string name="and_video_player">&amp; VIDEO PLAYER</string>\n    <string name="paste_video_url">Paste Video URL</string>\n    <string name="we_support_many_platforms">We support many platforms</string>\n    <string name="top_supported_platforms">Top Supported Platforms</string>\n    <string name="short_videos">Short Videos</string>\n    <string name="view_all">View All</string>\n    <string name="feedback">Feedback</string>\n    <string name="languages">Languages</string>\n    <string name="wait_dont_leave">Wait! Don\'t Leave Yet</string>\n    <string name="youre_one_step_away">You\'re just one step away from awesome content. Enjoy more with our features!</string>\n    <string name="paste_and_download">Paste &amp; Download</string>\n    <string name="enjoy_hd_videos">Enjoy videos in HD, Full HD and 4K quality</string>\n    <string name="save_reels_posts">Save Reels &amp; Posts</string>\n    <string name="enjoying">ENJOYING </string>\n    <string name="the_app">THE APP?</string>\n    <string name="rate_us_help_improve">Rate us and help us improve</string>\n    <string name="tap_star_rate">Tap a star to rate your experience</string>\n    <string name="exit_app_short">Exit App</string>\n    <string name="watch_video">Watch Video</string>
+    <string name="ad">AD</string>
+    <string name="player">Player</string>
+    <string name="video_downloader_upper">VIDEO DOWNLOADER</string>
+    <string name="file_not_found">File not found</string>
+    <string name="hello">Hello</string>
+    <string name="video_name">Video Name</string>
+    <string name="play_pause">Play/Pause</string>
+    <string name="thumbnail">Thumbnail</string>
+    <string name="for_you">For You</string>
+    <string name="internal_upper">INTERNAL</string>
+    <string name="search">Search</string>
+    <string name="discover">Discover</string>
+    <string name="all">All</string>
+    <string name="unfavorite">Unfavorite</string>
+    <string name="in_progress">In Progress</string>
+    <string name="downloaded">Downloaded</string>
+    <string name="delete_video">Delete Video</string>
+    <string name="are_you_sure_delete">Are you sure you want to delete this file from your device?</string>
+    <string name="yes_delete">Yes, Delete</string>
+    <string name="paste_url_here">Paste URL here ...</string>
+    <string name="download_the_video">Download The Video</string>
+    <string name="watch_ad_to_download">For downloading this video you have to watch a complete video ad</string>
+    <string name="go_to_premium">Go to Premium</string>
+    <string name="watch_ad">Watch ad</string>
+    <string name="less">Less</string>
+    <string name="photos">Photos</string>
+    <string name="videos">Videos</string>
+    <string name="feedback_video_fails">Video Fails to Download</string>
+    <string name="feedback_poor_quality">Poor Video Quality</string>
+    <string name="feedback_app_crashes">App Crashes or Freezes</string>
+    <string name="feedback_stops_midway">Stops Midway</string>
+    <string name="feedback_other">Other</string>
+    <string name="unlimited_downloads">Unlimited Downloads</string>
+    <string name="download_as_much_as_you_want">Download as much as you want.</string>
+    <string name="high_speed_downloads">High-Speed Downloads</string>
+    <string name="enjoy_ultra_fast_speed">Enjoy ultra-fast download speed</string>
+    <string name="download_reels_posts_stories">Download Reels, Posts and Stories</string>
+    <string name="ads_free_experience">Ads Free Experience</string>
+    <string name="no_ads_pure_experience">No ads, just pure and smooth experience.</string>
+    <string name="weekly">Weekly</string>
+    <string name="billed_weekly">Billed weekly</string>
+    <string name="per_week">/Week</string>
+    <string name="monthly">Monthly</string>
+    <string name="get_3_days_free_trial">Get 3-Days Free Trial</string>
+    <string name="per_month">/Month</string>
+    <string name="most_popular">Most Popular</string>
+    <string name="yearly">Yearly</string>
+    <string name="billed_yearly">Billed yearly</string>
+    <string name="per_year">/Year</string>
+    <string name="instantly_translate">Instantly Translate Any Text on Your Screen</string>
+    <string name="ask_anything_ai">Ask Anything with Your AI Chat Assistant</string>
+    <string name="translate_documents">Translate Documents &amp; Files Effortlessly</string>
+    <string name="chat_freely">Chat Freely with Real-Time Translation</string>
+    <string name="best_value">BEST VALUE</string>
+    <string name="download_videos_from_favorite">Download videos from your favorite social media platforms in just a few taps.</string>
+    <string name="paste_any_video_url">Paste any video URL and download instantly</string>
+    <string name="multi_platform_support">Multi-Platform Support</string>
+    <string name="supports_instagram_facebook_tiktok">Supports Instagram, Facebook, TikTok and many more</string>
+    <string name="fast_and_easy">Fast &amp; Easy</string>
+    <string name="quick_simple_high_quality">Quick, simple and high-quality downloads</string>
+    <string name="built_in">BUILT-IN</string>
+    <string name="play_downloaded_videos_high_quality">Play your downloaded videos in high quality with a smooth and powerful player.</string>
+    <string name="whatsapp_upper">WHATSAPP</string>
+    <string name="status_saver_upper">STATUS SAVER</string>
+    <string name="save_and_repost_whatsapp">Save and repost WhatsApp statuses easily and quickly</string>
+    <string name="next">Next</string>
+    <string name="facebook">Facebook</string>
+    <string name="instagram">Instagram</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="continue_btn">Continue</string>
+    <string name="billing_unavailable">Billing Unavailable!</string>
+    <string name="something_went_wrong">Something went wrong!</string>
+    <string name="something_went_wrong_try_again">Something went wrong. Try again.</string>
+    <string name="rewarded_ad_load_failed">Rewarded Ad Load Failed.</string>
+
+</resources>
