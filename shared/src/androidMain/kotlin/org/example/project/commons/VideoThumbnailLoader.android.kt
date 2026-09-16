@@ -19,7 +19,7 @@ actual suspend fun loadVideoThumbnail(urlOrPath: String): ImageBitmap? = withCon
         } else {
             retriever.setDataSource(urlOrPath)
         }
-        val bitmap = retriever.getFrameAtTime(1000000, MediaMetadataRetriever.OPTION_CLOSEST_SYNC)
+        val bitmap = retriever.getFrameAtTime(10000, MediaMetadataRetriever.OPTION_CLOSEST_SYNC)
             ?: retriever.getFrameAtTime(0, MediaMetadataRetriever.OPTION_CLOSEST_SYNC)
             ?: retriever.frameAtTime
         val imageBitmap = bitmap?.asImageBitmap()

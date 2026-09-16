@@ -45,6 +45,7 @@ import org.koin.dsl.module
 
 import coil3.compose.setSingletonImageLoaderFactory
 import org.example.project.commons.getPlatformImageLoader
+import org.example.project.commons.provideDownloadStatusModule
 
 @Composable
 @Preview
@@ -66,7 +67,8 @@ fun App(platformModule: Module = module { }) {
             provideDataStorePref(),
             platformModule,
             provideDownloadManagerModule(),
-            provideFilesManagerModule()
+            provideFilesManagerModule(),
+            provideDownloadStatusModule()
         )
     }), content = {
 

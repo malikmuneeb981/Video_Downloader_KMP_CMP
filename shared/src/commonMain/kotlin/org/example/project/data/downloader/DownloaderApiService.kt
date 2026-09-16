@@ -8,12 +8,13 @@ import io.ktor.client.request.setBody
 import io.ktor.client.statement.HttpResponse
 import io.ktor.http.parameters
 
+import org.example.project.config.AppConfig
+
 class DownloaderApiService(val httpClient: HttpClient) {
 
-
-    var BaseUrl = "https://downloaderapi.cyberarsenals.com/"
-    var ScecretKey = "XLQwhG7XRutcSt489FdHf8OBlZ5E8TrV80tqffT3dNyQ2AgDzr"
-    val endpoint = "endpointchecker/"
+    var BaseUrl = AppConfig.BASE_URL
+    var ScecretKey = AppConfig.SECRET_KEY
+    val endpoint = AppConfig.ENDPOINT_CHECKER
     val downloaderUrl = "${BaseUrl}$endpoint"
 
     suspend fun downloadVideo(vidUrl:String): HttpResponse

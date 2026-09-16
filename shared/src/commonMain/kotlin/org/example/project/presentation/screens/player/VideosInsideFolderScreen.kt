@@ -41,6 +41,7 @@ import downloaderkmpproductionapp.shared.generated.resources.Res
 import downloaderkmpproductionapp.shared.generated.resources.ic_right_arrow
 import downloaderkmpproductionapp.shared.generated.resources.nunito_semibold
 import org.example.project.navigation.NavRoutes
+import org.example.project.presentation.composables.MediaThumbnailImage
 import org.example.project.presentation.composables.VideoThumbnailView
 import org.example.project.presentation.viewModels.DownloaderViewModel
 import org.jetbrains.compose.resources.vectorResource
@@ -95,7 +96,7 @@ fun VideosInsideFolderScreen(navController: NavController,
                                     .clip(
                                         shape = RoundedCornerShape(12.dp)
                                     )) {
-                                    VideoThumbnailView(videoSource = it.uri, contentDescription = null,
+                                    MediaThumbnailImage(model = it.uri, contentDescription = null,
                                         modifier = Modifier.matchParentSize(),
                                         contentScale = ContentScale.Crop)
                                 }

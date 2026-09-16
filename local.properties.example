@@ -1,0 +1,5 @@
+## Copy this file to local.properties and add your values
+# sdk.dir=/path/to/Android/sdk
+BASE_URL=
+SECRET_KEY=
+ENDPOINT_CHECKER=

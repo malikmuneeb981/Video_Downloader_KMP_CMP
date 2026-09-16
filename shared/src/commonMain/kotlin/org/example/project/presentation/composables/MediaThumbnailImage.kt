@@ -4,6 +4,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -11,9 +12,11 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.unit.dp
 import coil3.compose.LocalPlatformContext
 import coil3.compose.SubcomposeAsyncImage
 import coil3.request.ImageRequest
@@ -23,7 +26,7 @@ import org.example.project.commons.loadVideoThumbnail
 @Composable
 fun MediaThumbnailImage(
     model: String,
-    modifier: Modifier = Modifier,
+    modifier: Modifier = Modifier.clip(RoundedCornerShape(10.dp)),
     contentScale: ContentScale = ContentScale.Crop,
     contentDescription: String? = null
 ) {
@@ -34,14 +37,15 @@ fun MediaThumbnailImage(
         lower.contains("/storage/reels/") || lower.contains("reels")
     }
 
-//    if (isVideo) {
+    if (isVideo) {
         VideoThumbnailView(
             videoSource = model,
             modifier = modifier,
             contentScale = contentScale,
             contentDescription = contentDescription
         )
-//    } else {
+    }
+//    else {
 //        SubcomposeAsyncImage(
 //            model = ImageRequest.Builder(LocalPlatformContext.current)
 //                .data(model)

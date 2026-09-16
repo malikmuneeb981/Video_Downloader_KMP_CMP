@@ -7,11 +7,12 @@ import io.ktor.client.request.headers
 import io.ktor.client.request.parameter
 import io.ktor.client.statement.HttpResponse
 
+import org.example.project.config.AppConfig
+
 class DailyMotionApiService(private val httpClient: HttpClient) {
 
-
-    var BaseUrl = "https://downloaderapi.cyberarsenals.com/"
-    var ScecretKey = "XLQwhG7XRutcSt489FdHf8OBlZ5E8TrV80tqffT3dNyQ2AgDzr"
+    var BaseUrl = AppConfig.BASE_URL
+    var ScecretKey = AppConfig.SECRET_KEY
     val endPoint = "dailymotionvideos/discover/"
     val endPointSearch = "dailymotionvideos/search/"
     suspend fun getVideos(): HttpResponse

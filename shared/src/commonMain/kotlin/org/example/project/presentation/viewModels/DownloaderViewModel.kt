@@ -16,6 +16,7 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import org.example.project.commons.AppUtilFunctions
 import org.example.project.commons.DownloadFileManager
+import org.example.project.commons.DownloadStatus
 import org.example.project.domain.models.apiModels.VideoDownloaderModel
 import org.example.project.domain.models.appmodels.MediaFolder
 import org.example.project.utils.DataStorePreferences
@@ -23,7 +24,7 @@ import org.example.project.utils.PreferencesKeys
 import kotlin.collections.emptyList
 
 class DownloaderViewModel(private val dataStorePreferences: DataStorePreferences,
-   private val downloadFileManager: DownloadFileManager,
+   private val downloadFileManager: DownloadFileManager, private val downloadStatus: DownloadStatus,
     private val appUtilFunctions: AppUtilFunctions): ViewModel() {
 
     val Terms_of_Service = ""
@@ -52,7 +53,7 @@ class DownloaderViewModel(private val dataStorePreferences: DataStorePreferences
 
     var selectedFolderWithFiles: MediaFolder?=null
     private val _downloadedFilesState = MutableStateFlow<List<String>>(emptyList())
-    val downloadedFilesState: StateFlow<List<String>> get() = _downloadedFilesState
+    val downloadedFilesState: StateFlow<List<String>> = _downloadedFilesState.asStateFlow()
 
     private val _downloadProgress = MutableStateFlow(mapOf<Long, Int>())
     val downloadProgress: StateFlow<Map<Long, Int>> = _downloadProgress.asStateFlow()
@@ -380,6 +381,19 @@ class DownloaderViewModel(private val dataStorePreferences: DataStorePreferences
 //    }
     fun setAppLocale(languageCode: String) {
         appUtilFunctions.changeAppLanguage(languageCode = languageCode)
+    }
+    fun downloadStatus(
+        isVideo: Boolean,
+        fileUri: String,
+        fileName: String,
+        appName: String
+    )=viewModelScope.launch(Dispatchers.IO){
+        downloadStatus.downloadStatus(
+            isVideo = isVideo,
+            fileUri = fileUri,
+            fileName = fileName,
+            appName = appName
+        )
     }
 fun formatDurationHMS(seconds: Int): String {
     val hours = seconds / 3600

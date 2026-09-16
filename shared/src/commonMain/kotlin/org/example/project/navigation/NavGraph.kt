@@ -8,6 +8,7 @@ import com.cyberarsenals.video.downloader.save.videos.presentation.screens.more.
 import org.example.project.navigation.NavRoutes
 import org.example.project.presentation.screens.downloader.DownloaderHomeScreen
 import org.example.project.presentation.screens.downloader.DownloadsScreen
+import org.example.project.presentation.screens.downloader.StatusSaverHomeScreen
 import org.example.project.presentation.screens.language.LanguageSelection
 import org.example.project.presentation.screens.language.LanguageSelectionInApp
 import org.example.project.presentation.screens.onBoarding.OnBoardingScreen
@@ -133,10 +134,9 @@ fun NavGraph(
                 languageSelectionViewModel = languageSelectionViewModel
             )
         }
-//        composable(NavRoutes.StatusSaverHomeScreen.route) {
-//            StatusSaverHomeScreen(navController= navController,downloaderViewModel=downloaderViewModel,
-//                remoteConfigViewModel = remoteConfigViewModel)
-//        }
+        composable(NavRoutes.StatusSaverHomeScreen.route) {
+            StatusSaverHomeScreen(navController= navController,downloaderViewModel=downloaderViewModel)
+        }
 //        composable(NavRoutes.ImageViewScreen.route) {
 //            ImageViewScreen(navController= navController,downloaderViewModel=downloaderViewModel,
 //                remoteConfigViewModel = remoteConfigViewModel)

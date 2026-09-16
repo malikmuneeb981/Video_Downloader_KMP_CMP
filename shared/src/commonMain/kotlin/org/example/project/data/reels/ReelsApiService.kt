@@ -5,8 +5,10 @@ import io.ktor.client.request.get
 import io.ktor.client.request.headers
 import io.ktor.client.statement.HttpResponse
 
+import org.example.project.config.AppConfig
+
 class ReelsApiService(val httpClient: HttpClient) {
-    val baseUrl = "https://downloaderapi.cyberarsenals.com/"
+    val baseUrl = AppConfig.BASE_URL
     val endpoint = "reels/"
     val reelsUrl = "$baseUrl$endpoint"
 
@@ -15,7 +17,7 @@ class ReelsApiService(val httpClient: HttpClient) {
 
         return  httpClient.get(reelsUrl){
             headers {
-                append("X-Secret-Key", "XLQwhG7XRutcSt489FdHf8OBlZ5E8TrV80tqffT3dNyQ2AgDzr")
+                append("X-Secret-Key", AppConfig.SECRET_KEY)
             }
         }
     }

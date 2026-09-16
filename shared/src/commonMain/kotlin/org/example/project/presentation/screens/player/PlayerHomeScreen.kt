@@ -73,6 +73,7 @@ import org.example.project.domain.models.appmodels.MediaFolder
 import org.example.project.navigation.NavRoutes
 import org.example.project.presentation.btmSheets.PermissionBtmSheet
 import org.example.project.presentation.composables.HomeSecondaryTopBar
+import org.example.project.presentation.composables.MediaThumbnailImage
 import org.example.project.presentation.composables.VideoThumbnailView
 import org.example.project.presentation.viewModels.DownloaderViewModel
 import org.example.project.presentation.viewModels.MediaReaderViewModel
@@ -444,7 +445,7 @@ fun VideosLazyColumn(list: List<MediaFile>,
                         .clip(
                             shape = RoundedCornerShape(12.dp)
                         )) {
-                        VideoThumbnailView(videoSource = it.uri ,
+                        MediaThumbnailImage(model = it.uri ,
                             contentDescription = null,
                             modifier = Modifier.matchParentSize(),
                             contentScale = ContentScale.Crop)

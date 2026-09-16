@@ -42,6 +42,8 @@ import downloaderkmpproductionapp.shared.generated.resources.ready_for_download
 import org.example.project.domain.models.apiModels.DownloaderAPIResponse
 import org.example.project.domain.models.apiModels.VideoDownloaderModel
 import org.example.project.presentation.composables.AppMainButton
+import org.example.project.presentation.composables.MediaThumbnailImage
+import org.example.project.presentation.composables.VideoThumbnailView
 import org.example.project.presentation.composables.WatchVidBtn
 import org.jetbrains.compose.resources.stringResource
 import org.jetbrains.compose.resources.vectorResource
@@ -89,8 +91,8 @@ fun DownloadableBtmSheet(downloaderAPIResponse: DownloaderAPIResponse?,
                         ), shape = RoundedCornerShape(8.dp)
                     ), contentAlignment = Alignment.Center
                 ) {
-                    AsyncImage(
-                        model = downloaderAPIResponse?.image_url,
+                    MediaThumbnailImage(
+                        model = downloaderAPIResponse?.image_url?:"",
                         contentDescription = null,
                         modifier = Modifier.matchParentSize()
                     )

@@ -366,9 +366,9 @@ fun DownloaderHomeScreen(
 
                         when(it.name){
                             "WA"->{
-//                                if (downloaderViewModel.isWhatsAppInstalled(context = activity)){
-//                                    downloaderViewModel.normalWAOrBusiness = 1
-//                                    navController.navigate(NavRoutes.StatusSaverHomeScreen.route)
+                             //   if (downloaderViewModel.isWhatsAppInstalled(context = activity)){
+                                    downloaderViewModel.normalWAOrBusiness = 1
+                                    navController.navigate(NavRoutes.StatusSaverHomeScreen.route)
 //                                }else{
 //                                    coroutineScope.launch {
 //                                        snackBarState.showSnackbar("Please Install WhatsApp First")
@@ -378,8 +378,8 @@ fun DownloaderHomeScreen(
                             }
                             "WB"->{
 //                                if (downloaderViewModel.isWhatsAppBusinessInstalled(context = activity)){
-//                                    downloaderViewModel.normalWAOrBusiness = 2
-//                                    navController.navigate(NavRoutes.StatusSaverHomeScreen.route)
+                                    downloaderViewModel.normalWAOrBusiness = 2
+                                    navController.navigate(NavRoutes.StatusSaverHomeScreen.route)
 //                                }else{
 //                                    coroutineScope.launch {
 //                                        snackBarState.showSnackbar("Please Install WhatsApp Business First")
